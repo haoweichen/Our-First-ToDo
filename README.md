@@ -5,7 +5,7 @@ For this lab, we're going to embark on a very common path that web developers st
 The major concepts of this lab are:
 
 <li>Seperating concerns into different modules:</li>
-    <li>Database connection in one module</li>
+   <blockquote>Database connection in one module</blockquote>
     <li>Collections defined in another</li>
     <li>Data manipulation in another</li>
 <li>Further practicing the usage of promises for asynchronous code</li>
