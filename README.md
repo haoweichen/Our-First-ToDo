@@ -32,7 +32,7 @@ In todo.js, you will create and export four methods:
 <br><strong>createTask(title, description);</strong></br>
 
 This function will return a promise that resolves to a newly created to-do list object, with the following properties:
-<code><pre>
+<pre><code>
 {
     _id: "a unique identifier for the task; you will generate these using uuid package",
     title: "the title of the task",
@@ -40,13 +40,13 @@ This function will return a promise that resolves to a newly created to-do list 
     completed: false,
     completedAt: null
 }   
-</pre></code>
+</code></pre>
 This task will be stored in the <strong>todoItems</strong> collection.
 Important Note: <strong>you will create and set the <code>_id</code> field in the <code>createTask</code> method.</strong>
 Important Note: as you can tell, the parameters only provide a title and description. You must still set the other fields before inserting them into the database.
 If the task cannot be created, the method should reject.
 You would use it as:
-<code><pre>
+<pre><code>
 const todoItems = require("./todo");
 
 let createdTask = todoItems.createTask("My First Task", "This is the first thing I need to do today");
@@ -54,7 +54,7 @@ let createdTask = todoItems.createTask("My First Task", "This is the first thing
 createdTask.then((newTask) => {
     console.log(newTask);
 });
-</pre></code>
+</code></pre>
 <br><strong>getAllTasks();</strong></br>
 This function will return a promise that resolves to an array of all tasks in the database.
 
