@@ -5,9 +5,9 @@ For this lab, we're going to embark on a very common path that web developers st
 The major concepts of this lab are:
 
 <li>Seperating concerns into different modules:</li>
-<li>Database connection in one module</li>
-<li><blockquote>Collections defined in another</blockquote></li>
-<li><blockquote>Data manipulation in another</blockquote></li>
+    <li>Database connection in one module</li>
+    <li>Collections defined in another</li>
+    <li>Data manipulation in another</li>
 <li>Further practicing the usage of promises for asynchronous code</li>
 <li>Continuing our exercises of only linking these modules together as needed</li>
 <br><strong>Packages you will use:</strong></br>
@@ -15,7 +15,7 @@ You will use the <a href="https://www.npmjs.com/package/uuid">uuid</a> package i
 
 You will also use the <a href="https://mongodb.github.io/node-mongodb-native/">mongodb</a>. Links to an external site. package.
 
-You may use the <a href="https://github.com/Stevens-CS546/CS-546-WS-Summer-1/tree/master/Lecture%20Code/lecture_04">lecture 4 code</a>as a guide.
+You may use the <a href="https://github.com/Stevens-CS546/CS-546-WS-Summer-1/tree/master/Lecture%20Code/lecture_04">lecture 4 code</a> as a guide.
 
 You must save all dependencies to your package.json file
 
