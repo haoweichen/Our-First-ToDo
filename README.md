@@ -6,9 +6,9 @@ The major concepts of this lab are:
 
 <li>Seperating concerns into different modules:</li>
 <ul>
-<li>Database connection in one module</li>
-<li>Collections defined in another</li>
-<li>Data manipulation in another</li>
+ <li>Database connection in one module</li>
+ <li>Collections defined in another</li>
+ <li>Data manipulation in another</li>
 </ul>
 <li>Further practicing the usage of promises for asynchronous code</li>
 <li>Continuing our exercises of only linking these modules together as needed</li>
