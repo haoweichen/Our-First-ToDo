@@ -63,7 +63,7 @@ This function will return a promise that resolves to an array of all tasks in th
 This function will return a promise that resolves to a task from the database, when given an id. For example, you would use this method as:
 If no id is provided, the method should return a rejected promise.
 If the task does not exist, the method should return a rejected promise.
-<pre><code>
+```javascript
 const todoItems = require("./todo");
 
 let taskPromise = todoItems.getTask("9714a17c-f228-49e9-a772-9086f5ff8bfb");
@@ -71,13 +71,13 @@ let taskPromise = todoItems.getTask("9714a17c-f228-49e9-a772-9086f5ff8bfb");
 taskPromise.then((task) => {
     console.log(task);
 })
-</code></pre>
+```
 
 <br><strong>completeTask(taskId)</strong></br>
 This function will modify the task in the database. It will set <code>completed</code> to <code>true</code> and <code>completedAt</code> to the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date">current time</a>.
 If no id is provided, the method should return a rejected promise.
 If the task cannot be updated (does not exist, etc), the method should reject.
-<pre><code>
+```javascript
 const todoItems = require("./todo");
 
 let taskPromise = todoItems.getTask("9714a17c-f228-49e9-a772-9086f5ff8bfb");
@@ -89,7 +89,7 @@ let finishedTask = taskPromise.then((task) => {
 finishedTask.then((task) => {
     console.log(task);
 });
-</code></pre>
+```
 
 Important note: for now, in completeTask you will want to get the task from the database, update the task in your JS code, and then run the update command.
 
@@ -99,7 +99,7 @@ If you would like to do something more advanced, you may also research using the
 This function will remove the task from the database.
 If no id is provided, the method should return a rejected promise.
 If the task cannot be removed (does not exist), the method should reject.
-<pre><code>
+```javascript
 const todoItems = require("./todo");
 
 let removeTask = todoItems.removeTask("9714a17c-f228-49e9-a772-9086f5ff8bfb");
@@ -112,7 +112,7 @@ tryToGetTask.catch((error) => {
     // Should error out
     console.error(error);
 })
-</code></pre>
+```
 
 <br><strong>app.js</strong></br>
 For your app.js file, you will:
@@ -125,12 +125,12 @@ For your app.js file, you will:
 }
 </code></pre>
 <br><strong>2. Log the task, and then create a new task with the following details:</strong></br>
-<pre><code>
+```javascript
 {
     title: "Play Pokemon with Twitch TV",
     description: "Should we revive Helix?"
 }
-</code></pre>
+```
 <strong>3. After the task is inserted, query all tasks and log them</strong>
 <strong>4. After all the tasks are logged, remove the first task</strong>
 <strong>5. Query all tasks and log them</strong>
